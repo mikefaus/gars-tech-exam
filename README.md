@@ -1,13 +1,17 @@
-# Dashbaord-Tutorial-using-React-and-Ant-Design
-This repo contains code base regarding youtube tutorial (https://youtu.be/xvBUgdKUz5g) on how to develop a simple admin Dashboard using ReactJS and Ant Design UI Components.
+# Dashbaord GARS technical exam
+
+This repo contains code base regarding technical exam task for GARS.
+It is not an official product and free of accountability.
 
 The main features includes:
-- App Header with logo, name and notificaiton icons
-- App Footer with static links
-- App Sidebar for pages routing using react-router-dom
-- API integration to fetch data from server
-- Dashboard page to show statistics cards, recenet orders, and revenue chart using ChartJS
-- Different Table pages like Inventory, Orders and Customers list
-- Notificationa and Comments Drawer opened from Header
-- Other misc. functions used in admin dashboard portal
 
+- Dashboard Header with logo, name and log out button
+- Dashboard Footer
+- Sidebar for pages routing using react-router-dom
+
+To run this code:
+1.- Clone the repository in your local file
+2.- Open VS code and navigate to the directory with your cloned repository
+3.- Open the terminal in VS code
+4.- Run npm install
+5.- Run npm start

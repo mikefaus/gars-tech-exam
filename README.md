@@ -12,7 +12,7 @@ The main features includes:
 To run this code:
 
 1. Clone the repository in your local file
-2. Open VS code and navigate to the directory with your cloned repository
-3. Open the terminal in VS code
+2. Open VS code
+3. Navigate to the directory with the repository using the VS code terminal
 4. Run npm install
 5. Run npm start

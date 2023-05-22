@@ -6,7 +6,7 @@ const Card_radio_3 = (props) => {
     <div className="card">
       <div className="card_title">
         {props.title}
-        <IoIcons.IoIosHelpCircleOutline onClick={console.log("help")} />
+        <IoIcons.IoIosHelpCircleOutline />
       </div>
       <div className="card_body_3">
         <div className="radio_select">

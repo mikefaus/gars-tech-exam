@@ -1,16 +1,20 @@
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
 
 const Upload = () => {
 
-  const [selectedFile, setSelectedFile] = useState();
-	const [isFilePicked, setIsFilePicked] = useState(false);
-
-  const changeHandler = (event) => {
-    setSelectedFile(event.target.files[0]);
-    setIsFilePicked(true);
-  };
-  
   const handleSubmission = () => {
+  };
+
+    const handleFileUpload = (event) => {
+    const files = event.target.files;
+    // Process the uploaded files here
+    console.log(files);
+  };
+
+  const fileInputRef = useRef(null);
+
+  const handleFileButtonClick = () => {
+    fileInputRef.current.click();
   };
 
   return (
@@ -19,10 +23,15 @@ const Upload = () => {
         Upload Data to AWS
       </h1>
       <div className='content_body'>
-        {/* Drop down select */}
-        <button className='file_select'>
-          Chose file to upload
-        </button>
+
+        <button className='file_select' onClick={handleFileButtonClick}>Select Files</button>
+      <input
+        type="file"
+        ref={fileInputRef}
+        style={{ display: 'none' }}
+        onChange={handleFileUpload}
+        multiple
+      />
         {/* Upload button */}
         <button
           className='button_file'
